@@ -200,6 +200,10 @@ main {
     font-weight: 700;
 }
 
+.course-tile a:hover {
+    opacity: 0.5;
+}
+
 
 
 /* Footer */
