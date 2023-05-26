@@ -114,7 +114,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10vw;
+    margin: 20px 10vw;
 }
 
 
@@ -130,6 +130,10 @@ main {
     display: flex;
     padding: 0 0 0 10vw;
     align-items: center;
+    overflow-x: clip;
+    overflow-y: visible;
+    position: relative;
+    bottom: 12vh;
 }
 
 #intro-msg {
@@ -140,6 +144,8 @@ main {
 
 #intro-msg h2 {
     width: 460px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #intro-msg p {
@@ -152,12 +158,12 @@ main {
 
 #stats-image {
     content: url("/assets/image-hero-desktop.webp");
-    width: 50vw;
+    position: relative;
+    bottom: 20vh;
 }
 
 #courses {
     margin: 0 10vw 10vw 10vw;
-    background: transparent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -192,6 +198,10 @@ main {
     max-width: 56px;
     position: relative;
     bottom: 30px;
+}
+
+.course-tile p {
+    height: 40%;
 }
 
 .course-tile a {
@@ -232,38 +242,41 @@ span {
 @media(max-width: 800px){
 
     header {
-        padding-left: 30px;
-        padding-right: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     #intro {
         padding-left: 30px;
         padding-right: 30px;
         justify-content: space-between;
+        bottom: 10vh;
+        border: 2px solid green;
     }
 
     #intro-msg {
         display: flex;
-        width: 50%;
+        width: 40vw;
         flex-direction: column;
     }
     
     #intro-msg h2 {
-        width: auto;
+        width: 50vw;
         font-weight: 800;
         font-size: 40px;
         line-height: 51px;
     }
     
     #intro-msg p {
-        width: auto;
+        width: 50vw;
         font-weight: 500;
         font-size: 16px;
     }
 
     #stats-image {
         content: url("/assets/image-hero-tablet.webp");
-        width: 50%;
+        bottom: 5vh;
+        left: 0;
     }
 
     #courses {
@@ -288,13 +301,14 @@ span {
 @media(max-width: 450px){
 
     header {
-        padding: 20px 5vw;
+        margin: 20px 5vw;
     }
 
     #intro {
         flex-direction: column;
         padding: 0;
-        margin: 0;
+        margin: 0 0 30px 0;
+        bottom: 0;
     }
 
     #intro-msg {
@@ -316,6 +330,8 @@ span {
     #stats-image {
         content: url("/assets/image-hero-mobile.webp");
         width: 100%;
+        bottom: 0;
+        top: 20px;
     }
 
     #courses {
