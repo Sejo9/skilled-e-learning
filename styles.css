@@ -135,7 +135,7 @@ main {
     overflow-x: clip;
     overflow-y: visible;
     position: relative;
-    bottom: 12vh;
+    bottom: 5vw;
 }
 
 #intro-msg {
@@ -161,7 +161,7 @@ main {
 #stats-image {
     content: url("/assets/image-hero-desktop.webp");
     position: relative;
-    bottom: 20vh;
+    bottom: 8vw;
 }
 
 #courses {
@@ -241,7 +241,7 @@ span {
 
 
 /* Media Queries */
-@media(max-width: 800px){
+@media(max-width: 900px){
 
     header {
         margin-left: 30px;
@@ -252,7 +252,7 @@ span {
         padding-left: 30px;
         padding-right: 30px;
         justify-content: space-between;
-        bottom: 10vh;
+        bottom: 5vw;
     }
 
     #intro-msg {
