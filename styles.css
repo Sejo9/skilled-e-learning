@@ -115,6 +115,8 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 20px 10vw;
+    z-index: 1;
+    position: relative;
 }
 
 
@@ -251,7 +253,6 @@ span {
         padding-right: 30px;
         justify-content: space-between;
         bottom: 10vh;
-        border: 2px solid green;
     }
 
     #intro-msg {
